@@ -1,3 +1,4 @@
 [
-    {"name": "Johns Hopkins COVID-19 Data", "meta": "example-meta/johns-hopkins.json"}
+    {"name": "Johns Hopkins COVID-19 Data", "meta": "example-meta/johns-hopkins.json"},
+    {"name": "Country name to ISO mapping", "meta": "example-meta/countrycodes.json"}
 ]
