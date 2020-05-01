@@ -7,18 +7,15 @@ This is an attempt to provide a way to bring together resources/data being used 
 The [index.json](index.json) file in this repository is a central place to define other lists. It contains an object in the format:
 ```javascript
 {
-    "example": {
-        "author": "A.N. Other",
-        "description": "A description of the author"
-        "url": "https://an.other/", // URL of the author - may be their homepage
-        "index": "https://an.other/covid-19/index.json" // The URL of an index file
+    "example": {                                        // A unique key for the organisation
+        "author": "A.N. Other",	                        // The name of the organisation
+        "description": "A description of the author"	// A short description
+        "url": "https://an.other/",                     // URL of the organisation
+        "index": "https://an.other/covid-19/index.json" // The URL of their organisation index file
     },
-    "odi-leeds": {
-        "author": "ODI Leeds",
-        "description": "Data resources and visualisations collated by ODI Leeds",
-        "url": "https://odileeds.org/projects/covid-19/",
-        "index": "https://odileeds.github.io/covid-19/index.json"
-    }
+    .
+	.
+	.
 }
 ```
 
