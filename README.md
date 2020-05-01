@@ -33,6 +33,8 @@ These are JSON files containing a list of `datasets`. Here is [an example index 
 * `version` - The version number of the metadata format (this page uses `1.0`)
 * `datasets` - An array of [datasets as defined below](#dataset).
 
+We have created an [initial json schema](schemas/sub-index.json) to provide a full specification and examples are documented below.
+
 Here is a basic example:
 
 ```json
@@ -66,7 +68,7 @@ The following fields are optional:
 * `maintainer_email` - A contact email address for the maintainer so people can provide feedback.
 * `description` - A text description of the dataset.
 * `resources` - A list of resources ([see below](#resource)).
-* `dependencies` - A list of dependencies ([see below](#dependency)).
+* `references` - A list of dependencies ([see below](#reference)).
 
 Let's look at a bare-bones example with the minimum of metadata. This might be useful as a placeholder but wouldn't actually define any resources.
 
@@ -131,9 +133,9 @@ Now let's have a more complete example that has three CSV files and a web-based 
             "description": "",
             "url": "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv"
     }],
-    "dependencies": [{
-            "url": "https://raw.githubusercontent.com/odileeds/emer2gent-data/master/metadata/country-code-mapping.json",
-            "description": "Country names to ISO code mapping. Requires as data uses non-standard country names."
+    "references": [{
+            "url": "https://raw.githubusercontent.com/rolls-royce/EMER2GENT/master/data/sun/geo/country_name_mapping.csv",
+            "description": "Country names to ISO code mapping. Required as data uses non-standard country names."
     }]
 }
 ```
@@ -161,4 +163,15 @@ Here is an example of a visualisation resource:
 ```
 
 
-### Dependency
+### Reference
+
+This section can be used to specify other datasets which are linked to this one. For example, some resources may require other datasets or resources in order to be able to make full use of it. For example, the Johns Hopkins COVID-19 Dataset uses non-standard country names. From an analysis point of view, ISO country codes are much better.
+
+The team at Rolls-Royce created an excellent [country name to ISO3166 codes lookup CSV](https://github.com/rolls-royce/EMER2GENT/tree/master/data/sun/geo) - here's an example of that written as a references:
+
+```json
+{
+	"url": "https://raw.githubusercontent.com/rolls-royce/EMER2GENT/master/data/sun/geo/country_name_mapping.csv",
+	"description": "Country name to ISO3166 code mapping, as dataset uses non-standard country names"
+}
+```
