@@ -113,7 +113,7 @@ The following fields are optional:
 * `maintainer` - The name of the maintainer.
 * `maintainer_email` - A contact email address for the maintainer so people can provide feedback.
 * `description` - A text description of the dataset.
-* `resources` - A list of resources ([see below)[#resource]).
+* `resources` - A list of resources ([see below](#resource)).
 * `dependencies` - A list of dependencies ([see below](#dependency)).
 
 
