@@ -1,7 +1,7 @@
 # Emer<sup>2</sup>gent Data Resources
 This is an attempt to provide a way to bring together resources/data being used by the [Emer<sup>2</sup>gent Data Alliance](http://www.emergentalliance.org).
 
-There are many organisations with many different technologies available. The aim here is to distribute effort as much as possible and allow individual organisations to maintain their own lists of resources in a [common format](#organisation-index) that exists at a fixed URL on the web. An organisation only needs to update the [central index](#central-index) once with basic details about their organisation index.
+There are many organisations with many different technologies available. The aim here is to distribute effort as much as possible and allow individual organisations to maintain their own lists of resources ([organisation index](#organisation-index)). Their organisation index should exist at a fixed URL on the web. That might be in a Github repository, on their own site, or somewhere else; as long as the URL doesn't change. An organisation only needs to update the [central index](#central-index) once with basic details about their organisation index.
 
 **Note** - This is a work-in-progress and the format may change.
 
