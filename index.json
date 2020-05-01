@@ -1,4 +1,8 @@
-[
-    {"name": "Johns Hopkins COVID-19 Data", "meta": "https://raw.githubusercontent.com/odileeds/emer2gent-data/master/metadata/johns-hopkins.json"},
-    {"name": "Country name to ISO mapping", "meta": "https://raw.githubusercontent.com/odileeds/emer2gent-data/master/metadata/country-code-mapping.json"}
-]
+{
+    "odi-leeds": {
+        "author": "ODI Leeds",
+        "url": "https://odileeds.org/projects/covid-19/",
+        "index": "https://odileeds.github.io/covid-19/index.json",
+        "description": "Data resources and visualisations collated by ODI Leeds"
+    }
+}
