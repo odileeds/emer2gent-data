@@ -26,7 +26,7 @@
     ],
     "dependencies": [
         {
-            "metaURL": "./country-codes.json",
+            "metaURL": "https://raw.githubusercontent.com/odileeds/emer2gent-data/master/metadata/country-code-mapping.json",
             "description": "Country names to ISO code mapping. Requires as data uses non-standard country names."
         }
     ]

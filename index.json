@@ -1,4 +1,4 @@
 [
-    {"name": "Johns Hopkins COVID-19 Data", "meta": "example-meta/johns-hopkins.json"},
-    {"name": "Country name to ISO mapping", "meta": "example-meta/countrycodes.json"}
+    {"name": "Johns Hopkins COVID-19 Data", "meta": "https://raw.githubusercontent.com/odileeds/emer2gent-data/master/metadata/johns-hopkins.json"},
+    {"name": "Country name to ISO mapping", "meta": "https://raw.githubusercontent.com/odileeds/emer2gent-data/master/metadata/country-code-mapping.json"}
 ]
