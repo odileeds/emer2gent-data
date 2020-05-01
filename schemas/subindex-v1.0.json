@@ -6,13 +6,13 @@
     "description": "This schema defines the format for an index of datasets.",
     "required": [
         "version",
-        "datasets "
+        "datasets"
     ],
     "properties": {
         "version": {
-            "type": "number",
-            "description": "The version number of the format in use (this schema specifies version 1.0)",
-            "default": 1.0
+            "type": "string",
+            "description": "The version number of the format in use as a string (this schema specifies version 1.0)",
+            "default": "1.0"
         },
         "datasets": {
             "type": "array",
