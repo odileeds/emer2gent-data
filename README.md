@@ -23,18 +23,23 @@ The [index.json](index.json) file in this repository is a central place to defin
 
 These are JSON files containing a list of `datasets`. Each dataset can contain multiple `resources` (URLs of files/visualisations etc). The organisation index file is of the form:
 
-```javascript
+```json
 {
-	"version": "1.0",    // The version number of the metadata format
-	"datasets": []       // An array of datasets ([see below](#dataset))
+	"version": "1.0",
+	"datasets": []
 }
 ```
+
+The fields are:
+
+* `version` - The version number of the metadata format (this page uses `1.0`)
+* `datasets` - An array of [datasets as defined below](#dataset).
 
 ### Dataset
 
 An individual dataset's metadata is defined as follows:
 
-```javascript
+```json
 {
     "id": "jh-dashboard",
     "sharing": "public",
@@ -121,7 +126,7 @@ The following fields are optional:
 
 Your dataset may contain multiple resources such as a visualisation, CSV, JSON, PDF, API etc. The `resources` array lets you add them. Here is an example of a resource:
 
-```javascript
+```json
 {
 	"type": "vis",
 	"format": "html",
