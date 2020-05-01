@@ -4,18 +4,15 @@ This is an attempt to provide a way to bring together resources/data being used 
 **Note** - This is a work-in-progress and the format may change.
 
 ## Central index
-The [index.json](index.json) file in this repository is a central place to define other lists. It contains an object in the format:
-```javascript
+The [index.json file in this repository](index.json) is a central place to define other lists. It contains an object in the format:
+```json
 {
     "example": {                                        // A unique key for the organisation
         "author": "A.N. Other",	                        // The name of the organisation
         "description": "A description of the author"	// A short description
         "url": "https://an.other/",                     // URL of the organisation
         "index": "https://an.other/covid-19/index.json" // The URL of their organisation index file
-    },
-    .
-	.
-	.
+    }
 }
 ```
 
