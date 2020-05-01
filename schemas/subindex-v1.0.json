@@ -240,7 +240,7 @@
                             }
                         }
                     },
-                    "dependencies": {
+                    "references": {
                         "type": "array",
                         "description": "Any other datasets/resources which you think are required to be able to fully make use of this dataset. Dependencies should be referred to by index ID or URL.",
                         "items": {
@@ -253,7 +253,7 @@
                             ],
                             "properties": {
                                 "id": {
-                                    "description": "The ID of the index entry for the dependency dataset, IF it is also contained in this index.",
+                                    "description": "The ID of the index entry for the referenced dataset, IF it is also contained in this index.",
                                     "oneOf": [
                                         {
                                             "type": "string"
@@ -265,11 +265,11 @@
                                 },
                                 "url": {
                                     "type": "string",
-                                    "description": "URL of the dependency if it isn't contained in this index."
+                                    "description": "URL of the referenced dataset if it isn't contained in this index."
                                 },
                                 "description": {
                                     "type": "string",
-                                    "description": "Brief description of the dependency - say why it is included."
+                                    "description": "Brief description of the reference - say why it is included."
                                 }
                             },
                             "oneOf": [
