@@ -26,7 +26,7 @@ The properties are defined as follows:
 
 ### Organisation index
 
-These are JSON files containing a list of `datasets`. Each dataset can contain multiple `resources` (URLs of files/visualisations etc). The organisation index file is of the form:
+These are JSON files containing a list of `datasets`. Here is [an example index file for ODI Leeds' COVID-19 resources](https://odileeds.github.io/covid-19/index.json). Each dataset can contain multiple `resources` (URLs of files/visualisations etc). The organisation index file is of the form:
 
 ```json
 {
