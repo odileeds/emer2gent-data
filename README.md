@@ -18,7 +18,7 @@ The [index.json file in this repository](index.json) is a central place to defin
 
 The properties are defined as follows:
 
-* `unique-id` - A unique key for the organisation
+* `unique-id` - A unique key for the organisation. This should only be made of [URL-safe characters](http://www.ietf.org/rfc/rfc3986.txt) i.e. ALPHA  DIGIT  `-`, `.`, `_`, `~`. It will be used to namespace IDs of individual datasets.
 * `author` - The name of the organisation
 * `description` - A short description
 * `url` - The URL of the organisation
@@ -44,7 +44,7 @@ Here is a basic example:
 
 An individual dataset's metadata has the following required fields:
 
-* `id` - A unique ID within this index file. This should be persistent and made of [URL-safe characters](http://www.ietf.org/rfc/rfc3986.txt) i.e. ALPHA  DIGIT  "-" / "." / "_" / "~".
+* `id` - A unique ID within this index file. This should be persistent and made of [URL-safe characters](http://www.ietf.org/rfc/rfc3986.txt) i.e. ALPHA  DIGIT  `-`, `.`, `_`, `~`.
 * `createdAt` - An [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) datetime string of when the dataset was created.
 * `title` - The title of the dataset.
 
@@ -66,7 +66,7 @@ The following fields are optional:
 * `resources` - A list of resources ([see below](#resource)).
 * `dependencies` - A list of dependencies ([see below](#dependency)).
 
-Let's look at aa bare-bones example with the minimum of metadata. This might be useful as a placeholder but wouldn't actually define any resources.
+Let's look at a bare-bones example with the minimum of metadata. This might be useful as a placeholder but wouldn't actually define any resources.
 
 ```json
 {
