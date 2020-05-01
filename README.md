@@ -28,6 +28,11 @@ The properties are defined as follows:
 
 These are JSON files containing a list of `datasets`. Here is [an example index file for ODI Leeds' COVID-19 resources](https://odileeds.github.io/covid-19/index.json). Each dataset can contain multiple `resources` (URLs of files/visualisations etc). The organisation index file is of the form:
 
+* `version` - The version number of the metadata format (this page uses `1.0`)
+* `datasets` - An array of [datasets as defined below](#dataset).
+
+Here is a basic example:
+
 ```json
 {
 	"version": "1.0",
@@ -35,14 +40,43 @@ These are JSON files containing a list of `datasets`. Here is [an example index 
 }
 ```
 
-The fields are:
-
-* `version` - The version number of the metadata format (this page uses `1.0`)
-* `datasets` - An array of [datasets as defined below](#dataset).
-
 ### Dataset
 
-An individual dataset's metadata is defined as follows:
+An individual dataset's metadata has the following required fields:
+
+* `id` - A unique ID within this index file. This should be persistent and made of [URL-safe characters](http://www.ietf.org/rfc/rfc3986.txt) i.e. ALPHA  DIGIT  "-" / "." / "_" / "~".
+* `createdAt` - An [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) datetime string of when the dataset was created.
+* `title` - The title of the dataset.
+
+The following fields are optional:
+
+* `sharing` - One of `public` (for publicly visible resources), `private` (for resources that are not available), or `alliance` (for resources available to members of the Emer2gent Alliance).
+* `topics` - An array of topics from the [topic list](topics.json).
+* `tags` - An array of text strings for tagging the dataset. These can be whatever you like.
+* `licence` - A text string with the `Identifier` from the [SPDX list of licences](https://spdx.org/licenses/).
+* `updatedAt` - An [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) datetime string of when the dataset was last updated. 
+* `update_frequency` - Can be one of `Annually, Monthly, Quarterly, Weekly, Daily, Hourly, Real time, One off`.
+* `title` - The title of the dataset.
+* `author` - The name of the author.
+* `author_email` - A contact email address for the author of the dataset.
+* `url` - A URL associated with the dataset.
+* `maintainer` - The name of the maintainer.
+* `maintainer_email` - A contact email address for the maintainer so people can provide feedback.
+* `description` - A text description of the dataset.
+* `resources` - A list of resources ([see below](#resource)).
+* `dependencies` - A list of dependencies ([see below](#dependency)).
+
+Let's look at aa bare-bones example with the minimum of metadata. This might be useful as a placeholder but wouldn't actually define any resources.
+
+```json
+{
+	"id": "1",
+	"createdAt": "2020-05-01T00:00Z",
+	"title": "An example"
+}
+```
+
+Now let's have a more complete example that has three CSV files and a web-based visualisation as [resources](#resource):
 
 ```json
 {
@@ -102,34 +136,17 @@ An individual dataset's metadata is defined as follows:
 }
 ```
 
-The following fields are required:
-
-* `id` - A unique ID within this index file. This should be persistent and made of [URL-safe characters](http://www.ietf.org/rfc/rfc3986.txt) i.e. ALPHA  DIGIT  "-" / "." / "_" / "~".
-* `createdAt` - An [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) datetime string of when the dataset was created.
-* `title` - The title of the dataset.
-
-The following fields are optional:
-
-* `sharing` - One of `public` (for publicly visible resources), `private` (for resources that are not available), or `alliance` (for resources available to members of the Emer2gent Alliance).
-* `topics` - An array of topics from the [topic list](topics.json).
-* `tags` - An array of text strings for tagging the dataset. These can be whatever you like.
-* `licence` - A text string with the `Identifier` from the [SPDX list of licences](https://spdx.org/licenses/).
-* `updatedAt` - An [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) datetime string of when the dataset was last updated. 
-* `update_frequency` - Can be one of `Annually, Monthly, Quarterly, Weekly, Daily, Hourly, Real time, One off`.
-* `title` - The title of the dataset.
-* `author` - The name of the author.
-* `author_email` - A contact email address for the author of the dataset.
-* `url` - A URL associated with the dataset.
-* `maintainer` - The name of the maintainer.
-* `maintainer_email` - A contact email address for the maintainer so people can provide feedback.
-* `description` - A text description of the dataset.
-* `resources` - A list of resources ([see below](#resource)).
-* `dependencies` - A list of dependencies ([see below](#dependency)).
-
-
 ### Resource
 
-Your dataset may contain multiple resources such as a visualisation, CSV, JSON, PDF, API etc. The `resources` array lets you add them. Here is an example of a resource:
+Your dataset may contain multiple resources such as a visualisation, CSV, JSON, PDF, API etc. The `resources` array lets you add them. The fields are:
+
+* `type` - One of `data` (e.g. for raw or processed data), `vis` (e.g for a visualisation, chart, or dashboard), or `cat` (e.g. for a catalogue of other resources).
+* `format` - The type of resource. This should be the file extension in lowercase e.g. `csv`, `pdf`, `xls` etc.
+* `title` - A title for the resource.
+* `description` - An optional description for the resource. This may explain something specific to this resource.
+* `url` - The URL of the resource on the web. 
+
+Here is an example of a visualisation resource:
 
 ```json
 {
@@ -140,14 +157,6 @@ Your dataset may contain multiple resources such as a visualisation, CSV, JSON, 
 	"url": "https://coronavirus.jhu.edu/us-map"
 }
 ```
-
-The fields are:
-
-* `type` - One of `data` (e.g. for raw or processed data), `vis` (e.g for a visualisation, chart, or dashboard), or `cat` (e.g. for a catalogue of other resources).
-* `format` - The type of resource. This should be the file extension in lowercase e.g. `csv`, `pdf`, `xls` etc.
-* `title` - A title for the resource.
-* `description` - An optional description for the resource. This may explain something specific to this resource.
-* `url` - The URL of the resource on the web. 
 
 
 ### Dependency
