@@ -26,7 +26,7 @@
             },
             "sharing": {
                 "type": "string",
-                "description": "Whether this datasets resources are be public, private to the contbutor, or to be shared with the alliance only.",
+                "description": "Whether this datasets' resources are public, private to the contbutor, or to be shared with the alliance only.",
                 "examples": [
                     "public", "internal", "alliance"
                 ],
@@ -42,7 +42,7 @@
             },
             "tags": {
                 "type": "array",
-                "description": "Array of keywords/tags. Similar to topics but, except tags can be defined by the user whereas topics will be from a pre-defined selection.",
+                "description": "Array of keywords/tags. Similar to topics except tags can be defined by the user whereas topics will be from a pre-defined selection.",
                 "items": {
                     "type": "string",
                     "examples": [ "#COVID-19", "data" ]
@@ -58,7 +58,7 @@
             },
             "createdAt": {
                 "type": "string",
-                "description": "Valid ISO Date / Datetime string for when this dataset was added to the index. Time is optional, but if you do include it, include the time zone too.",
+                "description": "Valid ISO 8601 date / datetime string for when this dataset was added to the index. Time is optional, but if you do include it, include the time zone too.",
                 "default": "",
                 "examples": [
                     "2020-01-05",
@@ -110,7 +110,7 @@
             },
             "maintainer": {
                 "type": "string",
-                "description": "Maintainer / data steward - ie who is ensuring this index entry is up to date and checking the quality of the data?",
+                "description": "Maintainer / data steward i.e. who is ensuring this index entry is up to date and checking the quality of the data?",
                 "examples": [
                     "A. Person"
                 ]
@@ -132,7 +132,7 @@
             },
             "resources": {
                 "type": "array",
-                "description": "An array of resources within this dataset, ie. data files, visualisations etc.",
+                "description": "An array of resources within this dataset i.e. data files, visualisations etc.",
                 "items": {
                     "type": "object",
                     "required": [
@@ -158,7 +158,7 @@
                         },
                         "temporal_coverage_from": {
                             "type": "string",
-                            "description": "ISO date stamp of when the data starts. Can optionally include time (with timezone).",
+                            "description": "ISO 8601 datestamp of when the data starts. Can optionally include time (with timezone).",
                             "examples": [
                                 "2020-01-05",
                                 "2020-01-05T11:27:08Z",
