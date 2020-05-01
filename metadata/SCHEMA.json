@@ -1,0 +1,98 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "{url}",
+    "title": "Metadata",
+    "description": "Schema for recording metadata for a data source",
+    "type": "object",
+    "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "license": {
+            "description": "License the data is released under (e.g. MIT) if known / applicable",
+            "type": "string"
+        },
+        "steward": {
+            "description": "Name of the data steward (if applicable)",
+            "type": "string"
+        },
+        "metrics": {
+            "description": "What is measured by the data (TODO - define some possible values)",
+            "oneOf": [
+                { "type": "string" },
+                {
+                    "type": "array",
+                    "items": { "type": "string" }
+                }
+            ]
+        },
+        "topics": {
+            "description": "List of topics/keywords (TODO - define topics)",
+            "type": "array",
+            "items": { "type": "string" }
+        },
+        "geo": {
+            "description": "Geographical coverage of the data. Singular, or array of, ISO3166 country/continent codes.",
+            "oneOf": [
+                {
+                    "type": "string",
+                    "maxLength": 3
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "maxLength": 3
+                    }
+                }
+            ]
+        },
+        "resources": {
+            "description": "Array of data resources for this source",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "description": { "type": "string" },
+                    "url": {
+                        "description": "URL of raw data - should not change",
+                        "type": "string"
+                    },
+                    "metrics": {
+                        "oneOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "required": ["url"]
+            }
+        },
+        "dependencies": {
+            "description": "Other resources which may be required in order to make use of this data.",
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "metaURL": {
+                            "description": "URL for the metadata for the dependency",
+                            "type": "string"
+                        },
+                        "description": {
+                            "description": "What the dependency is and why its required.",
+                            "type": "string"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "required": ["name", "resources"]
+}

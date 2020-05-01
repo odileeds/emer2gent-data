@@ -1,0 +1,14 @@
+{
+    "name": "Country names to ISO3166 Mapping",
+    "source": "https://github.com/rolls-royce/EMER2GENT/tree/master/data/sun/geo",
+    "description": "Mapping of country names (inc. non-standard names) to ISO3166 alpha-3 & numeric",
+    "license": "MIT",
+    "steward": "Klaus",
+    "topics": ["geography"],
+    "geo": "*",
+    "resources": [
+        {
+            "url": "https://github.com/rolls-royce/EMER2GENT/blob/master/data/sun/geo/country_name_mapping.csv"
+        }
+    ]
+}
