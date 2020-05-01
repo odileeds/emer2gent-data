@@ -7,14 +7,22 @@ This is an attempt to provide a way to bring together resources/data being used 
 The [index.json file in this repository](index.json) is a central place to define other lists. It contains an object in the format:
 ```json
 {
-    "example": {                                        // A unique key for the organisation
-        "author": "A.N. Other",	                        // The name of the organisation
-        "description": "A description of the author"	// A short description
-        "url": "https://an.other/",                     // URL of the organisation
-        "index": "https://an.other/covid-19/index.json" // The URL of their organisation index file
+    "unique-id": {                                        
+        "author": "A.N. Other",
+        "description": "A description of the author"
+        "url": "https://an.other/",
+        "index": "https://an.other/covid-19/index.json"
     }
 }
 ```
+
+The properties are defined as follows:
+
+* `unique-id` - A unique key for the organisation
+* `author` - The name of the organisation
+* `description` - A short description
+* `url` - The URL of the organisation
+* `index` - The URL of the organisation's [index file](#organisation-index)
 
 ### Organisation index
 
