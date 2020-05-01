@@ -9,7 +9,7 @@ The [index.json file in this repository](index.json) is a central place to defin
 {
     "unique-id": {                                        
         "author": "A.N. Other",
-        "description": "A description of the author"
+        "description": "A description of the author",
         "url": "https://an.other/",
         "index": "https://an.other/covid-19/index.json"
     }
