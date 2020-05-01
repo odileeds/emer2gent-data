@@ -1,0 +1,295 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/odileeds/emer2gent-data/master/schemas/v1.0.json",
+    "type": "object",
+    "title": "Data Resource Index",
+    "description": "This schema defines the format for an index of datasets.",
+    "required": [
+        "version",
+        "datasets "
+    ],
+    "properties": {
+        "version": {
+            "type": "number",
+            "description": "The version number of the format in use (this schema specifies version 1.0)",
+            "default": 1.0
+        },
+        "datasets": {
+            "type": "array",
+            "description": "An array of datasets as defined below.",
+            "items": {
+                "type": "object",
+                "description": "A dataset entry, comprising of metadata and resources",
+                "required": [
+                    "id",
+                    "createdAt",
+                    "title"
+                ],
+                "properties": {
+                    "id": {
+                        "description": "A chosen ID for this dataset which is unique within this index.",
+                        "oneOf": [
+                            {
+                                "type": "string"
+                            },
+                            {
+                                "type": "number"
+                            }
+                        ],
+                        "examples": [
+                            "jh-dashboard",
+                            123
+                        ]
+                    },
+                    "sharing": {
+                        "type": "string",
+                        "description": "Whether this datasets resources are be public, private to the contbutor, or to be shared with the alliance only.",
+                        "examples": [
+                            "public",
+                            "internal",
+                            "alliance"
+                        ],
+                        "pattern": "^public$|^internal$|^alliance$"
+                    },
+                    "topics": {
+                        "type": "array",
+                        "description": "Array of topics which this dataset is included in. Alliance to agree on set list of possible values for this field for consistency.",
+                        "items": {
+                            "type": "string",
+                            "examples": [
+                                "health",
+                                "timeline"
+                            ]
+                        }
+                    },
+                    "tags": {
+                        "type": "array",
+                        "description": "Array of keywords/tags. Similar to topics but, except tags can be defined by the user whereas topics will be from a pre-defined selection.",
+                        "items": {
+                            "type": "string",
+                            "examples": [
+                                "#COVID-19",
+                                "data"
+                            ]
+                        }
+                    },
+                    "licence": {
+                        "type": "string",
+                        "description": "SPDX Identifier for the licence the resources are released under. See https://spdx.org/licenses/",
+                        "default": "",
+                        "examples": [
+                            "MIT",
+                            "CC-BY-4.0",
+                            "OGL-UK-3.0"
+                        ]
+                    },
+                    "createdAt": {
+                        "type": "string",
+                        "description": "Valid ISO Date / Datetime string for when this dataset was added to the index. Time is optional, but if you do include it, include the time zone too.",
+                        "default": "",
+                        "examples": [
+                            "2020-01-05",
+                            "2020-01-05T11:27:08Z",
+                            "2020-01-05T12:22+01:00"
+                        ],
+                        "matches": "^[0-9]{4}-[0-9]{2}-[0-9]{2}(?:T[0-9]{2}:[0-9]{2}(?::[0-9]{2})?(?:Z|[+-][0-9]{2}:[0-9]{2}))?$"
+                    },
+                    "updatedAt": {
+                        "type": "string",
+                        "description": "When this index entry was last edited (not when the resources themselves were updated. ISO 8601 format as above.",
+                        "matches": "^[0-9]{4}-[0-9]{2}-[0-9]{2}(?:T[0-9]{2}:[0-9]{2}(?::[0-9]{2})?(?:Z|[+-][0-9]{2}:[0-9]{2}))?$"
+                    },
+                    "update_frequency": {
+                        "type": "string",
+                        "description": "How often the resources are updated. See examples for allowed values.",
+                        "examples": [
+                            "annually",
+                            "monthly",
+                            "quarterly",
+                            "weekly",
+                            "daily",
+                            "hourly",
+                            "real time",
+                            "one off"
+                        ],
+                        "matches": "^annually$|^monthly$|^quarterly$|^weekly$|^daily$|^hourly$|^real time$|^one off$"
+                    },
+                    "title": {
+                        "type": "string",
+                        "description": "Dataset title",
+                        "examples": [
+                            "Johns Hopkins COVID-19 Dataset"
+                        ]
+                    },
+                    "author": {
+                        "type": "string",
+                        "description": "Who created / published the data.",
+                        "examples": [
+                            "Johns Hopkins University"
+                        ]
+                    },
+                    "author_email": {
+                        "type": "string",
+                        "description": "Contact email for author specified above if available / applicable",
+                        "examples": [
+                            "fakeemail@coronavirus.jhu.edu"
+                        ]
+                    },
+                    "url": {
+                        "type": "string",
+                        "description": "URL for the source/homepage of the dataset",
+                        "examples": [
+                            "https://coronavirus.jhu.edu/"
+                        ]
+                    },
+                    "maintainer": {
+                        "type": "string",
+                        "description": "Maintainer / data steward - ie who is ensuring this index entry is up to date and checking the quality of the data?",
+                        "examples": [
+                            "A. Person"
+                        ]
+                    },
+                    "maintainer_email": {
+                        "type": "string",
+                        "description": "Email for maintainer named above, if available.",
+                        "default": "",
+                        "examples": [
+                            "fakeemail@an-organisation.com"
+                        ]
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "Brief description of the dataset.",
+                        "examples": [
+                            "2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE"
+                        ]
+                    },
+                    "resources": {
+                        "type": "array",
+                        "description": "An array of resources within this dataset, ie. data files, visualisations etc.",
+                        "items": {
+                            "type": "object",
+                            "required": [
+                                "type",
+                                "format",
+                                "url"
+                            ],
+                            "properties": {
+                                "type": {
+                                    "type": "string",
+                                    "description": "Type of resource - either 'data', 'vis' (visualisation/dashboard) or 'cat' (catalogue/collation)",
+                                    "default": "",
+                                    "examples": [
+                                        "data",
+                                        "vis",
+                                        "cat"
+                                    ]
+                                },
+                                "format": {
+                                    "type": "string",
+                                    "description": "File type, or 'html' for a website etc.",
+                                    "examples": [
+                                        "json",
+                                        "csv",
+                                        "html",
+                                        "xlsx",
+                                        "pdf"
+                                    ]
+                                },
+                                "check_size": {
+                                    "type": "number",
+                                    "description": "Size of resource in KB"
+                                },
+                                "temporal_coverage_from": {
+                                    "type": "string",
+                                    "description": "ISO date stamp of when the data starts. Can optionally include time (with timezone).",
+                                    "examples": [
+                                        "2020-01-05",
+                                        "2020-01-05T11:27:08Z",
+                                        "2020-01-05T12:22+01:00"
+                                    ],
+                                    "matches": "^[0-9]{4}-[0-9]{2}-[0-9]{2}(?:T[0-9]{2}:[0-9]{2}(?::[0-9]{2})?(?:Z|[+-][0-9]{2}:[0-9]{2}))?$"
+                                },
+                                "temporal_coverage_to": {
+                                    "type": "string",
+                                    "description": "When the data coverage ends (if it isn't still being updated). Same format as above",
+                                    "matches": "^[0-9]{4}-[0-9]{2}-[0-9]{2}(?:T[0-9]{2}:[0-9]{2}(?::[0-9]{2})?(?:Z|[+-][0-9]{2}:[0-9]{2}))?$"
+                                },
+                                "title": {
+                                    "type": "string",
+                                    "description": "A name for the resource",
+                                    "examples": [
+                                        "COVID-19 United States Cases by County"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string",
+                                    "description": "Brief description of the resource",
+                                    "examples": [
+                                        "Data is updated once per day after 8 p.m. Eastern to allow the system to pull county-level data. For the most up-to-date confirmed cases and deaths, please see the COVID-19 Global Map. New York City borough deaths data does not include Probable COVID-19 deaths, as this data is not reported."
+                                    ]
+                                },
+                                "url": {
+                                    "type": "string",
+                                    "description": "URL of the resource. Should be a direct link to the resource being described - e.g http://website.com/file1.csv, not http://website.com/downloads",
+                                    "examples": [
+                                        "https://coronavirus.jhu.edu/us-map",
+                                        "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "dependencies": {
+                        "type": "array",
+                        "description": "Any other datasets/resources which you think are required to be able to fully make use of this dataset. Dependencies should be referred to by index ID or URL.",
+                        "items": {
+                            "type": "object",
+                            "examples": [
+                                {
+                                    "url": "https://raw.githubusercontent.com/odileeds/emer2gent-data/master/metadata/country-code-mapping.json",
+                                    "description": "Country names to ISO code mapping. Requires as data uses non-standard country names."
+                                }
+                            ],
+                            "properties": {
+                                "id": {
+                                    "description": "The ID of the index entry for the dependency dataset, IF it is also contained in this index.",
+                                    "oneOf": [
+                                        {
+                                            "type": "string"
+                                        },
+                                        {
+                                            "type": "number"
+                                        }
+                                    ]
+                                },
+                                "url": {
+                                    "type": "string",
+                                    "description": "URL of the dependency if it isn't contained in this index."
+                                },
+                                "description": {
+                                    "type": "string",
+                                    "description": "Brief description of the dependency - say why it is included."
+                                }
+                            },
+                            "oneOf": [
+                                {
+                                    "required": [
+                                        "id",
+                                        "description"
+                                    ]
+                                },
+                                {
+                                    "required": [
+                                        "url",
+                                        "description"
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
