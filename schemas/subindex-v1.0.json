@@ -265,21 +265,7 @@
                                     "type": "string",
                                     "description": "Brief description of the reference - say why it is included."
                                 }
-                            },
-                            "oneOf": [
-                                {
-                                    "required": [
-                                        "id",
-                                        "description"
-                                    ]
-                                },
-                                {
-                                    "required": [
-                                        "url",
-                                        "description"
-                                    ]
-                                }
-                            ]
+                            }
                         }
                     }
                 }
