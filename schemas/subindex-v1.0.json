@@ -246,17 +246,6 @@
                                 }
                             ],
                             "properties": {
-                                "id": {
-                                    "description": "The ID of the index entry for the referenced dataset, IF it is also contained in this index.",
-                                    "oneOf": [
-                                        {
-                                            "type": "string"
-                                        },
-                                        {
-                                            "type": "number"
-                                        }
-                                    ]
-                                },
                                 "url": {
                                     "type": "string",
                                     "description": "URL of the referenced dataset if it isn't contained in this index."
