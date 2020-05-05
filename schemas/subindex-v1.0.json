@@ -170,13 +170,14 @@
                             "properties": {
                                 "type": {
                                     "type": "string",
-                                    "description": "Type of resource - either 'data', 'vis' (visualisation/dashboard) or 'cat' (catalogue/collation)",
+                                    "description": "Type of resource - cat (Catalogue), vis (Visualiation), data (Raw Data)",
                                     "default": "",
                                     "examples": [
                                         "data",
                                         "vis",
                                         "cat"
-                                    ]
+                                    ],
+                                    "enum": ["data", "vis", "cat"]
                                 },
                                 "format": {
                                     "type": "string",
