@@ -49,7 +49,7 @@
                             "internal",
                             "alliance"
                         ],
-                        "pattern": "^public$|^internal$|^alliance$"
+                        "enum": ["public", "internal", "alliance"]
                     },
                     "topics": {
                         "type": "array",
@@ -112,7 +112,7 @@
                             "real time",
                             "one off"
                         ],
-                        "matches": "^annually$|^monthly$|^quarterly$|^weekly$|^daily$|^hourly$|^real time$|^one off$"
+                        "enum": ["annually", "monthly", "quarterly", "weekly", "daily", "hourly", "real time", "one off"]
                     },
                     "title": {
                         "type": "string",
