@@ -28,14 +28,7 @@
                 "properties": {
                     "id": {
                         "description": "A chosen ID for this dataset which is unique within this index.",
-                        "oneOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "number"
-                            }
-                        ],
+                        "type": "string",
                         "examples": [
                             "jh-dashboard",
                             123
