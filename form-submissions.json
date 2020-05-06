@@ -1,4 +1,33 @@
 {
   "version": "1.0",
-  "datasets": []
+  "datasets": [
+    {
+      "id": "a-unique-id",
+      "sharing": "public",
+      "topics": [
+        "test",
+        "topic2"
+      ],
+      "tags": [
+        "covid",
+        "emergent"
+      ],
+      "licence": "MIT",
+      "createdAt": "2020-01-01",
+      "update_frequency": "one off",
+      "title": "Test dataset",
+      "author": "patrick",
+      "author_email": "email@google.com",
+      "url": "github.com",
+      "resources": [
+        {
+          "type": "data",
+          "format": "csv",
+          "check_size": 2222,
+          "title": "resource1",
+          "url": "github.com"
+        }
+      ]
+    }
+  ]
 }
