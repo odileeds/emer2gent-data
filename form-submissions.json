@@ -1,4 +1,28 @@
 {
   "version": "1.0",
-  "datasets": []
+  "datasets": [
+    {
+      "id": "id2",
+      "topics": [
+        "topic"
+      ],
+      "tags": [
+        "tag2"
+      ],
+      "licence": "MIT",
+      "createdAt": "2020-01-01",
+      "update_frequency": "one off",
+      "title": "test",
+      "author": "patrick",
+      "resources": [
+        {
+          "type": "data",
+          "format": "csv",
+          "check_size": 183287,
+          "title": "a csv",
+          "url": "github.com"
+        }
+      ]
+    }
+  ]
 }
