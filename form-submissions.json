@@ -1,4 +1,34 @@
 {
   "version": "1.0",
-  "datasets": []
+  "datasets": [
+    {
+      "id": "odileeds",
+      "sharing": "public",
+      "topics": [
+        "Health"
+      ],
+      "tags": [
+        "#OpenDataSavesLives"
+      ],
+      "licence": "MIT",
+      "update_frequency": "one off",
+      "title": "Fake data",
+      "author": "ODI Leeds",
+      "author_email": "hello@odileeds.org",
+      "url": "https://odileeds.org/",
+      "maintainer": "Giles Dring",
+      "maintainer_email": "giles.dring@odileeds.org",
+      "description": "This is some fake data.",
+      "resources": [
+        {
+          "type": "vis",
+          "format": "html",
+          "check_size": 123,
+          "title": "A title",
+          "description": "A description",
+          "url": "https://odileeds.org/"
+        }
+      ]
+    }
+  ]
 }
