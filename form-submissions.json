@@ -1,4 +1,11 @@
 {
   "version": "1.0",
-  "datasets": []
+  "datasets": [
+    {
+      "id": "giles-test",
+      "sharing": "public",
+      "createdAt": "2020-05-05",
+      "title": "My test. Do not merge"
+    }
+  ]
 }
