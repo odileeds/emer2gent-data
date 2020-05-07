@@ -1,4 +1,15 @@
 {
   "version": "1.0",
-  "datasets": []
+  "datasets": [
+    {
+      "id": "patrick",
+      "sharing": "public",
+      "licence": "MIT",
+      "createdAt": "2020-05-07",
+      "update_frequency": "one off",
+      "title": "another test",
+      "author": "patrick",
+      "description": "testing new pipedream workflow"
+    }
+  ]
 }
