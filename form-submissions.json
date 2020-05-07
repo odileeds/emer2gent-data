@@ -1,4 +1,10 @@
 {
   "version": "1.0",
-  "datasets": []
+  "datasets": [
+    {
+      "id": "giles-test-2",
+      "createdAt": "2020-05-20",
+      "title": "Giles' second test"
+    }
+  ]
 }
