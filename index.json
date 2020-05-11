@@ -4,5 +4,11 @@
         "url": "https://odileeds.org/projects/covid-19/",
         "index": "https://odileeds.github.io/covid-19/index.json",
         "description": "Data resources and visualisations collated by ODI Leeds"
+    },
+    "public": {
+        "author": "Public Index",
+        "url": "https://emer2gent-data.netlify.app/add",
+        "index": "https://raw.githubusercontent.com/odileeds/emer2gent-data/master/form-submissions.json",
+        "description": "A public index of resources"
     }
 }
