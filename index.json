@@ -6,9 +6,9 @@
         "description": "Data resources and visualisations collated by ODI Leeds"
     },
     "public": {
-        "author": "Public Index",
+        "author": "Public",
         "url": "https://emer2gent-data.netlify.app/add",
         "index": "https://raw.githubusercontent.com/odileeds/emer2gent-data/master/form-submissions.json",
-        "description": "A public index of resources"
+        "description": "A public index of resources, which can be added to using the form on the datahub website."
     }
 }
