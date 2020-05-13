@@ -19,6 +19,34 @@
       "author_email": "erika.agostinelli1@ibm.com",
       "url": "https://github.com/pcm-dpc/COVID-19/",
       "description": "Italy Official Covid19 Granular Data (regiona and province level)"
+    },
+    {
+      "id": "another-bloody-test",
+      "sharing": "private",
+      "topics": [
+        "travel",
+        "crime"
+      ],
+      "tags": [
+        "t1,t2,t3"
+      ],
+      "licence": "AFL-2.1 ",
+      "createdAt": "2020-05-28",
+      "resources": [
+        {
+          "url": "http://resoruice.com",
+          "format": "html",
+          "check_size": "5436",
+          "temporal_coverage_from": "2020-05-06",
+          "description": "descr"
+        }
+      ],
+      "references": [
+        {
+          "url": "http://ref.com",
+          "description": "ref1"
+        }
+      ]
     }
   ]
 }
