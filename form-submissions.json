@@ -19,6 +19,7 @@
       "author_email": "erika.agostinelli1@ibm.com",
       "url": "https://github.com/pcm-dpc/COVID-19/",
       "description": "Italy Official Covid19 Granular Data (regiona and province level)"
-    }
+    },
+    "{\r\n\t\"id\":\"anothertest\",\r\n\t\"sharing\":\"public\",\r\n\t\"topics\":[\"travel\",\"b2c\"],\r\n\t\"tags\":[\"topic1, topic2, topic3\"],\r\n\t\"licence\":\"AFL-1.2 \",\r\n\t\"createdAt\":\"2020-05-19\",\r\n\t\"update_frequency\":\"one off\",\r\n\t\"title\":\"do not merge\",\r\n\t\"author\":\"patrick\",\r\n\t\"url\":\"google.com\",\r\n\t\"description\":\"a description\",\r\n\t\"resources\":[{\r\n\t\t\"url\":\"http://a.com\",\r\n\t\t\"format\":\"json\",\r\n\t\t\"check_size\":\"122\",\r\n\t\t\"temporal_coverage_from\":\"2020-05-05\",\r\n\t\t\"title\":\"r1\",\r\n\t\t\"description\":\"d1\"\r\n\t}],\r\n\t\"references\":[{\r\n\t\t\"url\":\"http://ref.com\",\r\n\t\t\"description\":\"a reference\"\r\n\t}]\r\n}"
   ]
 }
