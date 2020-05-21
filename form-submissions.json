@@ -44,6 +44,18 @@
           "title": "Actual csv that is updated everyday"
         }
       ]
+    },
+    {
+      "id": "demo",
+      "sharing": "public",
+      "topics": [
+        "travel"
+      ],
+      "tags": [
+        ""
+      ],
+      "createdAt": "2020-05-05",
+      "update_frequency": "daily"
     }
   ]
 }
