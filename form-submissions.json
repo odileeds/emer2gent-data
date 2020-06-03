@@ -44,6 +44,11 @@
           "title": "Actual csv that is updated everyday"
         }
       ]
+    },
+    {
+      "id": "dataset2",
+      "sharing": "private",
+      "title": "2"
     }
   ]
 }
