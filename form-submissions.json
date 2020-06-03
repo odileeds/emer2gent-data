@@ -44,6 +44,18 @@
           "title": "Actual csv that is updated everyday"
         }
       ]
+    },
+    {
+      "id": "test-dataset",
+      "sharing": "public",
+      "topics": [
+        "travel"
+      ],
+      "tags": [
+        ""
+      ],
+      "licence": "APSL-2.0 ",
+      "title": "test dataset"
     }
   ]
 }
