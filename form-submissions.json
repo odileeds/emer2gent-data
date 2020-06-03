@@ -44,6 +44,15 @@
           "title": "Actual csv that is updated everyday"
         }
       ]
+    },
+    {
+      "id": "api-test",
+      "sharing": "public",
+      "topics": [
+        "travel"
+      ],
+      "licence": "MIT",
+      "title": "test dataset"
     }
   ]
 }
