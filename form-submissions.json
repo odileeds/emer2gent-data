@@ -46,7 +46,7 @@
       ]
     },
     {
-      "id": "https://pantheon.corp.google.com/marketplace/details/bigquery-public-datasets/covid19-dataset-list?filter=solution-type:dataset&q=covid&id=4a850823-3f83-48f5-92d1-01ba6f8ed81e",
+      "id": "google-bigquery-public",
       "sharing": "public",
       "topics": [
         "timeline"
