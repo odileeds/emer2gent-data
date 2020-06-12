@@ -92,9 +92,9 @@
           "url": "https://ec.europa.eu/eurostat/tgm/table.do?tab=table&plugin=1&language=en&pcode=teibs010",
           "description": "The economic sentiment indicator (ESI) is a composite indicator produced by the Directorate General for Economic and Financial Affairs (DG ECFIN) of the European Commission. Its objective is to track GDP growth at Member states, EU and euro area levels. The ESI is a weighted average of the balances of replies to selected questions addressed to firms in five sectors covered by the EU Business and Consumer Surveys and to consumers. The sectors covered are industry (weight 40 %), services (30 %), consumers (20 %), retail (5 %) and construction (5 %). Balances are constructed as the difference between the percentages of respondents giving positive and negative replies. EU and euro-area aggregates are calculated on the basis of the national results and seasonally adjusted. The ESI is scaled to a long-term mean of 100 and a standard deviation of 10. Thus, values above 100 indicate above-average economic sentiment and vice versa. Data are seasonally adjusted (SA)."
         }
-       ]
+      ]
     },
-    { 
+    {
       "id": "notams_icao",
       "sharing": "public",
       "topics": [
@@ -147,21 +147,73 @@
       ]
     },
     {
-      "id":"macroeconomic_data",
-      "sharing":"public",
-      "topics":["b2c"],
-      "challenges":["supply-chain","aloha"],
-      "tags":["Economy, Governments, Indicators, GDP"],
-      "createdAt":"2020-06-12",
-      "title":"AssetMacro Macroeconomic Indicators ",
-      "url":"https://www.assetmacro.com/",
-      "maintainer":"Maria Ivanciu",
-      "maintainer_email":"maria@emergentalliance.org",
-      "description":"AssetMacro Macroeconomic database covers 20,000+ Indicators for more than 120 countries. Explore the full list of macroeconomic indicators leading indicators and coincident indicators and market data by clicking on the specific country's link from the table below. ",
-      "references":[{
-        "url":"https://www.assetmacro.com/macroeconomic-indicators/",
-        "description":"Use the email address to get access."
-      }]
-}
+      "id": "macroeconomic_data",
+      "sharing": "public",
+      "topics": [
+        "b2c"
+      ],
+      "challenges": [
+        "supply-chain",
+        "aloha"
+      ],
+      "tags": [
+        "Economy, Governments, Indicators, GDP"
+      ],
+      "createdAt": "2020-06-12",
+      "title": "AssetMacro Macroeconomic Indicators ",
+      "url": "https://www.assetmacro.com/",
+      "maintainer": "Maria Ivanciu",
+      "maintainer_email": "maria@emergentalliance.org",
+      "description": "AssetMacro Macroeconomic database covers 20,000+ Indicators for more than 120 countries. Explore the full list of macroeconomic indicators leading indicators and coincident indicators and market data by clicking on the specific country's link from the table below. ",
+      "references": [
+        {
+          "url": "https://www.assetmacro.com/macroeconomic-indicators/",
+          "description": "Use the email address to get access."
+        }
+      ]
+    },
+    {
+      "topics": [
+        "travel",
+        "crime",
+        "b2c"
+      ],
+      "challenges": [
+        "rail",
+        "aloha"
+      ],
+      "resources": [
+        {
+          "type": "data",
+          "url": "http://odi.com",
+          "format": "csv",
+          "check_size": "245354",
+          "temporal_coverage_from": "2020-06-17",
+          "title": "resource1"
+        },
+        {
+          "type": "data",
+          "url": "http://website.com",
+          "format": "html",
+          "check_size": "54743345",
+          "temporal_coverage_from": "2020-06-24",
+          "temporal_coverage_to": "2020-06-22",
+          "title": "resource2"
+        }
+      ],
+      "references": [
+        {
+          "url": "http://ref.com",
+          "description": "ref1"
+        }
+      ],
+      "id": "test123",
+      "sharing": "private",
+      "tags": "tag1,tag2,tag3",
+      "licence": "AGPL-3.0-only ",
+      "createdAt": "2020-06-10",
+      "update_frequency": "weekly",
+      "description": "multi\r\nline\r\ndescription"
+    }
   ]
 }
