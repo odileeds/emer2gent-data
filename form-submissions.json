@@ -66,6 +66,31 @@
       "url": "https://pantheon.corp.google.com/marketplace/details/bigquery-public-datasets/covid19-dataset-list?filter=solution-type:dataset&q=covid&id=4a850823-3f83-48f5-92d1-01ba6f8ed81e",
       "maintainer_email": "andrewb@google.com",
       "description": "To aid researchers, data scientists, and analysts in an effort to combat COVID-19, we are hosting a repository of public datasets like Johns Hopkins Center for Systems Science and Engineering (JHU CSSE), the US Census Bureau's American Community Survey (ACS), and OpenStreetMaps data free to access and analyze through our COVID-19 Public Dataset Program."
+    },
+    {
+      "id": "notams_icao",
+      "sharing": "public",
+      "topics": [
+        "travel"
+      ],
+      "challenges": [
+        "aviation"
+      ],
+      "tags": [
+        "NOTAMs, ICAO, Airports, Restrictions"
+      ],
+      "createdAt": "2020-06-12T11:15+00:00",
+      "update_frequency": "daily",
+      "title": "NOTAMs ICAO",
+      "author": "Maria Ivanciu",
+      "author_email": "maria@emergentalliance.org",
+      "description": "Airport and airspace NOTAMS message for both COVID-related and general NOTAMs. Data is grouped in six different topics: States; Airports; Operators; Airspaces; Occurrences; Aircraft.",
+      "references": [
+        {
+          "url": "https://www.icao.int/safety/iStars/Pages/API-Data-Service.aspx",
+          "description": "Need to create a free account to use the API"
+        }
+      ]
     }
   ]
 }
