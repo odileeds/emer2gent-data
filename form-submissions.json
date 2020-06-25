@@ -242,6 +242,31 @@
       "title": "DELVE COVID-19 Dataset",
       "maintainer": "Maria Ivanciu",
       "description": "Oxford Government Response Tracker\r\nACAPS #COVID19 Government Measures\r\nOur World in Data\r\nGoogle Mobility Report\r\nWorld Bank Data Bank\r\nHuman Mortality Database\r\nThe Economist excess mortality tracker\r\nEUROSTAT\r\nApple Maps Mobility Trends Reports\r\nUK Met Office\r\nSimplemaps\r\nInternational Organization for Standardization"
+    },
+    {
+      "topics": [
+        "timeline"
+      ],
+      "challenges": [],
+      "resources": [
+        {
+          "type": "data"
+        }
+      ],
+      "references": [],
+      "id": "cern-open-science-public",
+      "sharing": "public",
+      "tags": "COVID19, Research",
+      "licence": "LGPL-2.0-or-later ",
+      "createdAt": "2020-06-25T21:34+00:00",
+      "updatedAt": "2020-06-25T21:35+00:00",
+      "update_frequency": "daily",
+      "title": "Open Science Data",
+      "url": "https://zenodo.org/",
+      "author": "CERN",
+      "maintainer": "Dragomir Kovacevic",
+      "maintainer_email": "dragomir.kovacevic@jpyramid.co.uk",
+      "description": "Zenodo, a CERN service, is an open dependable home for the long-tail of science, enabling researchers to share and preserve any research outputs in any size, any format and from any science."
     }
   ]
 }
