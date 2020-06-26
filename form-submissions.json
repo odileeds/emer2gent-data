@@ -186,7 +186,6 @@
           "format": "csv"
         }
       ],
-      "references": [],
       "id": "notams-iata",
       "sharing": "public",
       "tags": "iata, notams, aviation",
@@ -202,12 +201,6 @@
       "challenges": [
         "rail"
       ],
-      "resources": [
-        {
-          "type": "data"
-        }
-      ],
-      "references": [],
       "id": "NetworkRailOpenDataMirror",
       "sharing": "alliance",
       "tags": "timetable train-movement train-describer",
@@ -235,7 +228,6 @@
           "format": "git"
         }
       ],
-      "references": [],
       "id": "rs-delve",
       "sharing": "public",
       "tags": "Economy, Governments, Oxford",
@@ -247,13 +239,6 @@
       "topics": [
         "timeline"
       ],
-      "challenges": [],
-      "resources": [
-        {
-          "type": "data"
-        }
-      ],
-      "references": [],
       "id": "cern-open-science-public",
       "sharing": "public",
       "tags": "COVID19, Research",
