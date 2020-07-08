@@ -254,11 +254,6 @@
       "description": "Zenodo, a CERN service, is an open dependable home for the long-tail of science, enabling researchers to share and preserve any research outputs in any size, any format and from any science."
     },
     {
-      "resources": [
-        {
-          "type": "data"
-        }
-      ],
       "id": "copernicus-eu-open-satellite-data",
       "sharing": "public",
       "tags": "Satellite Data, Space Data",
@@ -280,11 +275,6 @@
       ],
       "challenges": [
         "aloha"
-      ],
-      "resources": [
-        {
-          "type": "data"
-        }
       ],
       "id": "korea-covid-data-province-city",
       "sharing": "public",
