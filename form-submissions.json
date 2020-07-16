@@ -338,6 +338,35 @@
       "maintainer": "Vertical Knowledge",
       "maintainer_email": "customer-support@vk.ai",
       "description": "Since November of 2018, Vertical Knowledge has tracked key metrics weekly, and more recently, daily on global flight paths, fares, capacity and aircraft platforms. This provides information on competitive fares, popular flight pairing and associated capacity.\r\n \r\nThis data can be leveraged to gain day-by-day insights into the airline sector. COVID-G19 has increased the demand for this data and can assist in understand the impact the pandemic is having on the airline industry as well as predict encouraging signs of recovery."
+    },
+    {
+      "topics": [
+        "travel",
+        "b2c",
+        "timeline"
+      ],
+      "challenges": [],
+      "resources": [
+        {
+          "type": "data"
+        }
+      ],
+      "references": [],
+      "id": "Cruise-Data-Vertical-Knowledge",
+      "sharing": "alliance",
+      "tags": "Cruise, cruise.com, travel, Vertical-Knowledge",
+      "licence": "VK (Open Source)",
+      "createdAt": "2020-01-01",
+      "updatedAt": "2020-07-16",
+      "update_frequency": "monthly",
+      "title": "Cruise Data - Vertical Knowledge",
+      "url": "Available upon request.",
+      "author": "Vertical Knowledge",
+      "author_email": "customer-support@vk.ai",
+      "maintainer": "Vertical Knowledge",
+      "maintainer_email": "customer-support@vk.ai",
+      "description": "Since early 2020, Vertical Knowledge has tracked key metrics on a monthly basis from the largest aggregator of cruises in the world. This cruise pricing data spans across most of the largest global cruise providers.\r\n\r\nBy understanding the supply and demand of cruise providers, analyst can better understand the performance, health, and trends of the cruise and travel industries. Insights into economic drivers as well as energy consumption can also be derived from this data set.\r\n\r\nSample includes the following fields:\r\n\r\nCollection Date\r\nVendor Name\r\nDestination\r\nTrip Name\r\nExternal ID\r\nShip Rating (if available)\r\nAccommodation (if available)\r\nDeparture Date\r\nDuration\r\nPackage Name\r\nRate (Price)\r\nBonus Offers\r\nURL\r\nCall For Price? (Binary)",
+      "json": "Available upon request. "
     }
   ]
 }
