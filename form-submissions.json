@@ -392,6 +392,35 @@
       "maintainer_email": "customer-support@vk.ai",
       "description": "Since October of 2017, Vertical Knowledge captures weekly car rental pricing data from nine rental car companies across the top 50 US airports. Vertical Knowledge collects pricing for different periods (weekly, weekend, weekday), and different future time periods (3 months, 2 months, 1 month, 2 weeks, 1 week, and a few days). These data points span across car types (mid-size, full-size, SUV, etc.).\r\n\r\nThis data set enables investors to understand relative pricing trends across brands and year-over-year price comparisons. In addition to analyzing the Rental Car industry, the data provides useful insights into the travel industry and airport volumes.",
       "json": "Available upon request."
+    },
+    {
+      "topics": [
+        "travel",
+        "b2c",
+        "timeline"
+      ],
+      "challenges": [],
+      "resources": [
+        {
+          "type": "data"
+        }
+      ],
+      "references": [],
+      "id": "US-Short-Term-Home-Rentals-Vertical-Knowledge",
+      "sharing": "alliance",
+      "tags": "home-rentals, vertical-knowledge",
+      "licence": "VK (Open Source)",
+      "createdAt": "2017-03-01",
+      "updatedAt": "2020-07-16",
+      "update_frequency": "quarterly",
+      "title": "US Short Term Home Rentals",
+      "url": "Available upon request. ",
+      "author": "Vertical Knowledge",
+      "author_email": "customer-support@vk.ai",
+      "maintainer": "Vertical Knowledge",
+      "maintainer_email": "customer-support@vk.ai",
+      "description": "Since March of 2017, Vertical Knowledge has tracked key metrics of pricing, availability, and review data for US properties from Airbnb. The data provides insights into pricing trends, geography, availability, and user sentiment on a quarterly basis.\r\n\r\nThis data set is useful in understanding the supply and demand of short-term rental market in addition to providing pricing and availability. Used in conjunction with other travel data, this data can be used to understand the demand for short term rentals relative to hotels and the broader health of the travel industry.",
+      "json": "Available upon request. "
     }
   ]
 }
