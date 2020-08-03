@@ -288,14 +288,6 @@
       "description": "Official COVID-19 data by Korea Centers for Disease Control and Prevention (KCDC).\r\n"
     },
     {
-      "topics": [],
-      "challenges": [],
-      "resources": [
-        {
-          "type": "data"
-        }
-      ],
-      "references": [],
       "id": "covid19-africa-open-satellite-data",
       "sharing": "public",
       "tags": "COVID19, Africa",
@@ -318,12 +310,6 @@
       "challenges": [
         "aviation"
       ],
-      "resources": [
-        {
-          "type": "data"
-        }
-      ],
-      "references": [],
       "id": "Flights-Data-Vertical-Knowledge",
       "sharing": "alliance",
       "tags": "Flights, Airlines, COVID, Open-Source, Vertical-Knowledge",
@@ -338,6 +324,28 @@
       "maintainer": "Vertical Knowledge",
       "maintainer_email": "customer-support@vk.ai",
       "description": "Since November of 2018, Vertical Knowledge has tracked key metrics weekly, and more recently, daily on global flight paths, fares, capacity and aircraft platforms. This provides information on competitive fares, popular flight pairing and associated capacity.\r\n \r\nThis data can be leveraged to gain day-by-day insights into the airline sector. COVID-G19 has increased the demand for this data and can assist in understand the impact the pandemic is having on the airline industry as well as predict encouraging signs of recovery."
+    },
+    {
+      "topics": [
+        "travel",
+        "b2c",
+        "timeline"
+      ],
+      "id": "Cruise-Data-Vertical-Knowledge",
+      "sharing": "alliance",
+      "tags": "Cruise, cruise.com, travel, Vertical-Knowledge",
+      "licence": "VK (Open Source)",
+      "createdAt": "2020-01-01",
+      "updatedAt": "2020-07-16",
+      "update_frequency": "monthly",
+      "title": "Cruise Data - Vertical Knowledge",
+      "url": "Available upon request.",
+      "author": "Vertical Knowledge",
+      "author_email": "customer-support@vk.ai",
+      "maintainer": "Vertical Knowledge",
+      "maintainer_email": "customer-support@vk.ai",
+      "description": "Since early 2020, Vertical Knowledge has tracked key metrics on a monthly basis from the largest aggregator of cruises in the world. This cruise pricing data spans across most of the largest global cruise providers.\r\n\r\nBy understanding the supply and demand of cruise providers, analyst can better understand the performance, health, and trends of the cruise and travel industries. Insights into economic drivers as well as energy consumption can also be derived from this data set.\r\n\r\nSample includes the following fields:\r\n\r\nCollection Date\r\nVendor Name\r\nDestination\r\nTrip Name\r\nExternal ID\r\nShip Rating (if available)\r\nAccommodation (if available)\r\nDeparture Date\r\nDuration\r\nPackage Name\r\nRate (Price)\r\nBonus Offers\r\nURL\r\nCall For Price? (Binary)",
+      "json": "Available upon request. "
     },
     {
       "topics": [
@@ -366,17 +374,33 @@
     },
     {
       "topics": [
+        "travel",
+        "b2c",
+        "timeline"
+      ],
+      "id": "US-Short-Term-Home-Rentals-Vertical-Knowledge",
+      "sharing": "alliance",
+      "tags": "home-rentals, vertical-knowledge",
+      "licence": "VK (Open Source)",
+      "createdAt": "2017-03-01",
+      "updatedAt": "2020-07-16",
+      "update_frequency": "quarterly",
+      "title": "US Short Term Home Rentals",
+      "url": "Available upon request. ",
+      "author": "Vertical Knowledge",
+      "author_email": "customer-support@vk.ai",
+      "maintainer": "Vertical Knowledge",
+      "maintainer_email": "customer-support@vk.ai",
+      "description": "Since March of 2017, Vertical Knowledge has tracked key metrics of pricing, availability, and review data for US properties from Airbnb. The data provides insights into pricing trends, geography, availability, and user sentiment on a quarterly basis.\r\n\r\nThis data set is useful in understanding the supply and demand of short-term rental market in addition to providing pricing and availability. Used in conjunction with other travel data, this data can be used to understand the demand for short term rentals relative to hotels and the broader health of the travel industry.",
+      "json": "Available upon request. "
+    },
+    {
+      "topics": [
         "b2c"
       ],
       "challenges": [
         "supply-chain"
       ],
-      "resources": [
-        {
-          "type": "data"
-        }
-      ],
-      "references": [],
       "id": "Online-Bestsellers-Data-Vertical-Knowledge",
       "sharing": "alliance",
       "tags": "Online-Bestsellers, Amazon",
